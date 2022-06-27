@@ -1,4 +1,45 @@
 .App {
+	margin: 50px;
+	text-align: center;
+}
+.search {
+	padding: 10px;
+	font-size: 20px;
+}
+.list {
+	padding: 0;
+	list-style-type: none;
+	text-align: center;
+}
+.listItem {
+	margin-bottom: 20px;
+	font-size: 25px;
+	color: #444;
+	font-weight: 300;
+}
+table {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	margin: 50px 0;
+	border-spacing: 15px;
+	color: #444;
+}
+tr {
+	margin-bottom: 20px;
+}
+th {
+	width: 350px;
+	text-align: left;
+	font-size: 20px;
+}
+td {
+	width: 250px;
+	font-size: 20px;
+	text-align: left;
+}
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +76,96 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+.box {
+	float: left;
+	width: 200px;
+	margin: 20px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	background: #f5f5f5;
+	padding-bottom: 10px;
+}
+
+.box img {
+	width: 100%;
+	height: 150px;
+	object-fit: cover;
+}
+
+.box .name {
+	padding: 10px 10px 5px 10px;
+	font-weight: 600;
+}
+
+.box .email {
+	font-style: italic;
+	color: #666;
+}
+
+button.btn-load-more {
+	padding: 10px 20px;
+	margin: 20px 0 30px 0;
+	cursor: pointer;
+}
+
+.clearfix {
+	clear: both;
+}
+
+/* Fetch CSS */
+
+img {
+	height: 80px;
+}
+.card {
+	background: white;
+	padding: 20px;
+	text-align: center;
+	border-radius: 10px;
+}
+.productsWrapper {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 30px;
+}
+.btn {
+	border: none;
+	outline: none;
+	background: #764abc;
+	padding: 5px 10px;
+	color: #fff;
+	border-radius: 5px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+	background: #513282;
+}
+
+.heading {
+	padding: 25px 0;
+}
+.cartCount {
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-left: 40px;
+}
+.navLink {
+	text-decoration: none;
+	color: black;
+	margin-left: 20px;
+}
+
+.cartCard {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #fff;
+	margin-bottom: 20px;
+	padding: 14px;
+	border-radius: 5px;
 }
