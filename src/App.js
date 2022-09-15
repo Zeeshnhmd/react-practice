@@ -1,8 +1,8 @@
 import './App.css';
-import Search1 from './inputs/Search1';
-import Search2 from './inputs/Search2';
+import Search1 from './FilterSearch/Search1';
+import Search2 from './FilterSearch/Search2';
 import { useEffect, useState } from 'react';
-import { Users } from '../src/inputs/users';
+import { Users } from './FilterSearch/users';
 import Button from './button/Button';
 import Pagination from './Pagination';
 import Parent from './propsPassing/Parent';
@@ -50,8 +50,8 @@ function App() {
 			{/* <Button /> */}
 			{/* <Pagination /> */}
 			{/* <Parent /> */}
-			{/* <Fetch /> */}
-			<ApexChart />
+			<Fetch />
+			{/* <ApexChart /> */}
 		</div>
 	);
 }

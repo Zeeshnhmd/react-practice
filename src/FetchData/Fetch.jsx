@@ -1,70 +1,51 @@
-import React, { useEffect } from 'react';
-import { useState } from 'react';
-import './fetch.css';
-const Fetch = () => {
-	const [products, setProducts] = useState([]);
-	// const [showMore, setShowMore] = useState(false);
-	const [loading, setLoading] = useState(false);
+import React, { useEffect, useState } from 'react';
+
+const FetchData = () => {
+	const [user, setUser] = useState(null);
+	const [fetchError, setFetchError] = useState(null);
+	const [loading, setLoading] = useState(true);
 
 	useEffect(() => {
-		setLoading(true);
-		const datas = async () => {
-			const items = await fetch('https://fakestoreapi.com/products');
-			const data = await items.json();
-			setProducts(data);
-			console.log(data);
-		};
-		datas();
-		setLoading(false);
+		fetchData();
 	}, []);
 
-	// add new product
-	useEffect(() => {
-		const addNewProduts = async () => {
-			const addNew = fetch('https://fakestoreapi.com/products', {
-				method: 'POST',
-				headers: {
-					'Content-Type': 'application/json',
-				},
-				body: JSON.stringify({
-					title: 'test product',
-					price: 13.5,
-					description: 'lorem ipsum set',
-					image: 'https://i.pravatar.cc',
-					category: 'electronic',
-				}),
-			});
-			const add = await addNew.json();
-			setProducts(add);
-		};
-		addNewProduts();
-	}, []);
+	const fetchData = async () => {
+		try {
+			const response = await fetch(
+				'https://jsonplaceholder.typicode.com/users'
+			);
+			if (!response.ok)
+				throw new Error(
+					`This is an HTTP error, The status is ${response.status}`
+				);
+			const users = await response.json();
+			setUser(users);
+			setFetchError(null);
+		} catch (err) {
+			setFetchError(err.message);
+			setUser(null);
+		} finally {
+			setLoading(false);
+		}
+	};
 
 	return (
-		<>
-			{loading && <h1>Loading...</h1>}
-			<div className="layout">
-				{products.map((product) => {
-					return (
-						<div className="card" key={product.id}>
-							<img src={product.image} alt="" />
-							<h4>{product.title}</h4>
-							<p>{product.price}</p>
-
-							{/* <p className="description">
-							{showMore
-								? `${product.description}`
-								: `${product.description.subString(0, 50)}`}
-							<button onClick={() => setShowMore(!showMore)}>
-								{showMore ? 'Show less' : 'Show more'}
-							</button>
-						</p> */}
-						</div>
-					);
-				})}
-			</div>
-		</>
+		<div>
+			{loading && <p>Loading....</p>}
+			{fetchError && <p style={{ color: 'red' }}>{`Error: ${fetchError}`}</p>}
+			{!fetchError && !loading && (
+				<>
+					{user.map((use) => (
+						<p>{use.name}</p>
+					))}
+				</>
+			)}
+		</div>
 	);
 };
 
-export default Fetch;
+export default FetchData;
+
+// const ErrorDetail = () => {
+// 	return <p>Did not received expected data.</p>;
+// };
