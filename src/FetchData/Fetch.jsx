@@ -64,7 +64,7 @@ const FetchData = () => {
 
 	// FetchAll data
 
-	const fetchAll = async () => {
+	const fetchAllData = async () => {
 		const posts = fetch(
 			'https://jsonplaceholder.typicode.com/posts?_start=0&_limit=10'
 		).then((res) => res.json());
@@ -81,7 +81,7 @@ const FetchData = () => {
 	};
 
 	useEffect(() => {
-		fetchAll().then((res) => {
+		fetchAllData().then((res) => {
 			const postData = res[0];
 			const commentData = res[1];
 			const albumData = res[2];
