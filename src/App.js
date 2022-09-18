@@ -4,10 +4,11 @@ import Search2 from './FilterSearch/Search2';
 import { useEffect, useState } from 'react';
 import { Users } from './FilterSearch/users';
 import Button from './button/Button';
-import Pagination from './Pagination';
+import Pagination from './Pagination/Pagination';
 import Parent from './propsPassing/Parent';
 import Fetch from './FetchData/Fetch';
 import ApexChart from './ApexChart/ApexChart';
+import ReactPagination from './ReactPagination/ReactPagination';
 
 function App() {
 	const [query, setQuery] = useState('');
@@ -50,8 +51,9 @@ function App() {
 			{/* <Button /> */}
 			{/* <Pagination /> */}
 			{/* <Parent /> */}
-			<Fetch />
+			{/* <Fetch /> */}
 			{/* <ApexChart /> */}
+			<ReactPagination />
 		</div>
 	);
 }
