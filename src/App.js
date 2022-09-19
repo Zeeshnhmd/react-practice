@@ -9,6 +9,7 @@ import Parent from './propsPassing/Parent';
 import Fetch from './FetchData/Fetch';
 import ApexChart from './ApexChart/ApexChart';
 import ReactPagination from './ReactPagination/ReactPagination';
+import ReducerHook from './Hooks/UseReducer';
 
 function App() {
 	const [query, setQuery] = useState('');
@@ -53,7 +54,8 @@ function App() {
 			{/* <Parent /> */}
 			{/* <Fetch /> */}
 			{/* <ApexChart /> */}
-			<ReactPagination />
+			{/* <ReactPagination /> */}
+			<ReducerHook />
 		</div>
 	);
 }
