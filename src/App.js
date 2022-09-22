@@ -13,6 +13,7 @@ import ReducerHook from './Hooks/UseReducer';
 import CollapseLayout from './AntDesign/Layout/CollapseLayout';
 
 import Contents from './AntDesign/Contents';
+import ListViewGridView from './ListViewGridView/ListViewGridView';
 
 function App() {
 	const [query, setQuery] = useState('');
@@ -60,7 +61,8 @@ function App() {
 			{/* <ReactPagination /> */}
 			{/* <ReducerHook /> */}
 			{/* <CollapseLayout /> */}
-			<Contents />
+			{/* <Contents /> */}
+			<ListViewGridView />
 		</div>
 	);
 }

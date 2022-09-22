@@ -1,5 +1,12 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
 .App {
-	text-align: center;
+	max-width: 1240px;
+	margin: auto;
+	padding: 0 20px;
 }
 .search {
 	padding: 10px;
