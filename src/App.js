@@ -10,6 +10,9 @@ import Fetch from './FetchData/Fetch';
 import ApexChart from './ApexChart/ApexChart';
 import ReactPagination from './ReactPagination/ReactPagination';
 import ReducerHook from './Hooks/UseReducer';
+import CollapseLayout from './AntDesign/Layout/CollapseLayout';
+
+import Contents from './AntDesign/Contents';
 
 function App() {
 	const [query, setQuery] = useState('');
@@ -55,7 +58,9 @@ function App() {
 			{/* <Fetch /> */}
 			{/* <ApexChart /> */}
 			{/* <ReactPagination /> */}
-			<ReducerHook />
+			{/* <ReducerHook /> */}
+			{/* <CollapseLayout /> */}
+			<Contents />
 		</div>
 	);
 }
