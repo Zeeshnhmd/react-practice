@@ -14,6 +14,7 @@ import CollapseLayout from './AntDesign/Layout/CollapseLayout';
 
 import Contents from './AntDesign/Contents';
 import ListViewGridView from './ListViewGridView/ListViewGridView';
+import MainDashboard from './DashboardLayout/MainDashboard';
 
 function App() {
 	const [query, setQuery] = useState('');
@@ -62,7 +63,8 @@ function App() {
 			{/* <ReducerHook /> */}
 			{/* <CollapseLayout /> */}
 			{/* <Contents /> */}
-			<ListViewGridView />
+			{/* <ListViewGridView /> */}
+			<MainDashboard />
 		</div>
 	);
 }
