@@ -1,23 +1,24 @@
-import './App.css';
-import Search1 from './FilterSearch/Search1';
-import Search2 from './FilterSearch/Search2';
-import { useEffect, useState } from 'react';
-import { Users } from './FilterSearch/users';
-import Button from './button/Button';
-import Pagination from './Pagination/Pagination';
-import Parent from './propsPassing/Parent';
-import Fetch from './FetchData/Fetch';
-import ApexChart from './ApexChart/ApexChart';
-import ReactPagination from './ReactPagination/ReactPagination';
-import ReducerHook from './Hooks/UseReducer';
-import CollapseLayout from './AntDesign/Layout/CollapseLayout';
+import "./App.css";
+import Search1 from "./FilterSearch/Search1";
+import Search2 from "./FilterSearch/Search2";
+import { useEffect, useState } from "react";
+import { Users } from "./FilterSearch/users";
+import Button from "./button/Button";
+import Pagination from "./Pagination/Pagination";
+import Parent from "./propsPassing/Parent";
+import Fetch from "./FetchData/Fetch";
+import ApexChart from "./ApexChart/ApexChart";
+import ReactPagination from "./ReactPagination/ReactPagination";
+import ReducerHook from "./Hooks/UseReducer";
+import CollapseLayout from "./AntDesign/Layout/CollapseLayout";
 
-import Contents from './AntDesign/Contents';
-import ListViewGridView from './ListViewGridView/ListViewGridView';
-import MainDashboard from './DashboardLayout/MainDashboard';
+import Contents from "./AntDesign/Contents";
+import ListViewGridView from "./ListViewGridView/ListViewGridView";
+import MainDashboard from "./DashboardLayout/MainDashboard";
+import { Form } from "./FormSubmission/Form";
 
 function App() {
-	const [query, setQuery] = useState('');
+	const [query, setQuery] = useState("");
 
 	// method for search
 	const search1 = (data) => {
@@ -35,7 +36,7 @@ function App() {
 	};
 
 	// easy method for search2
-	const keys = ['first_name', 'last_name', 'email', 'gender'];
+	const keys = ["first_name", "last_name", "email", "gender"];
 
 	const searchEastMethod = (data) => {
 		return data.filter((item) =>
@@ -64,7 +65,8 @@ function App() {
 			{/* <CollapseLayout /> */}
 			{/* <Contents /> */}
 			{/* <ListViewGridView /> */}
-			<MainDashboard />
+			{/* <MainDashboard /> */}
+			<Form />
 		</div>
 	);
 }
