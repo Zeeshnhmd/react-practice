@@ -60,13 +60,13 @@ function App() {
 			{/* <Parent /> */}
 			{/* <Fetch /> */}
 			{/* <ApexChart /> */}
-			{/* <ReactPagination /> */}
+			<ReactPagination />
 			{/* <ReducerHook /> */}
 			{/* <CollapseLayout /> */}
 			{/* <Contents /> */}
 			{/* <ListViewGridView /> */}
 			{/* <MainDashboard /> */}
-			<Form />
+			{/* <Form /> */}
 		</div>
 	);
 }
