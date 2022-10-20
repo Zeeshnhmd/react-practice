@@ -1,0 +1,52 @@
+.create {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 100px;
+}
+.form__wrapper {
+  margin-bottom: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.create label {
+  text-align: left;
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+}
+.create h2 {
+  font-size: 20px;
+  color: #f1356d;
+  margin-bottom: 30px;
+}
+.create input,
+.create textarea,
+.create select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+  border-radius: 5px;
+}
+.create input,
+.create textarea,
+.create select:focus {
+  outline: none;
+}
+.formSumit {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.blogs__wrapper {
+  display: flex;
+  gap: 20px;
+  position: relative;
+}

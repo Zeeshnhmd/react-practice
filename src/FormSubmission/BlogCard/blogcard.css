@@ -1,0 +1,35 @@
+.card__wrapper {
+  background-color: #fff;
+  min-width: 200px;
+  min-height: 300px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid #000;
+  text-align: justify;
+  border-radius: 5px;
+  position: relative;
+}
+.delete__blog {
+  position: absolute;
+  color: #f1356d;
+  font-size: 20px;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+.card__h1 {
+  font-size: 28px;
+  font-weight: 600;
+}
+.card__p {
+  font-size: 16px;
+}
+.card__p1 {
+  font-size: 20px;
+  font-weight: 600;
+}
