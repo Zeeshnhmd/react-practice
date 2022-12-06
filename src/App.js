@@ -16,6 +16,7 @@ import Contents from "./AntDesign/Contents";
 import ListViewGridView from "./ListViewGridView/ListViewGridView";
 import MainDashboard from "./DashboardLayout/MainDashboard";
 import { Form } from "./FormSubmission/Form";
+import ReactBeautifulDnd from "./React-beautiful-dnd";
 
 function App() {
   const [query, setQuery] = useState("");
@@ -66,7 +67,8 @@ function App() {
       {/* <Contents /> */}
       {/* <ListViewGridView /> */}
       {/* <MainDashboard /> */}
-      <Form />
+      {/* <Form /> */}
+      <ReactBeautifulDnd />
     </div>
   );
 }
