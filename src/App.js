@@ -18,6 +18,7 @@ import MainDashboard from "./DashboardLayout/MainDashboard";
 import { Form } from "./FormSubmission/Form";
 import ReactBeautifulDnd from "./React-beautiful-dnd";
 import FetchNew from "./FetchData";
+import UseStateHook from "./Hooks/UseState";
 
 function App() {
   const [query, setQuery] = useState("");
@@ -70,7 +71,8 @@ function App() {
       {/* <MainDashboard /> */}
       {/* <Form /> */}
       {/* <ReactBeautifulDnd /> */}
-      <FetchNew />
+      {/* <FetchNew /> */}
+      <UseStateHook />
     </div>
   );
 }

@@ -4,9 +4,9 @@
   padding: 0;
 }
 .App {
-  /* max-width: 1240px; */
+  max-width: 1240px;
   margin: auto;
-  /* padding: 0 20px; */
+  padding: 0 20px;
   background-color: #fafafa;
 }
 .search {
