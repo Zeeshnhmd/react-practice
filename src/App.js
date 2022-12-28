@@ -17,6 +17,7 @@ import ListViewGridView from "./ListViewGridView/ListViewGridView";
 import MainDashboard from "./DashboardLayout/MainDashboard";
 import { Form } from "./FormSubmission/Form";
 import ReactBeautifulDnd from "./React-beautiful-dnd";
+import FetchNew from "./FetchData";
 
 function App() {
   const [query, setQuery] = useState("");
@@ -68,7 +69,8 @@ function App() {
       {/* <ListViewGridView /> */}
       {/* <MainDashboard /> */}
       {/* <Form /> */}
-      <ReactBeautifulDnd />
+      {/* <ReactBeautifulDnd /> */}
+      <FetchNew />
     </div>
   );
 }
