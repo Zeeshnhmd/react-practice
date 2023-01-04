@@ -47,6 +47,8 @@ const UseStateHook = () => {
         <Input onChange={(e) => setInput(e.target.value)} />
         <Button onClick={changeUser}>Change user</Button>
       </div>
+
+      <div></div>
     </>
   );
 };
